@@ -3,14 +3,38 @@
     padding: 0;
 }
 
-#card {
-    position: absolute;
-    left: 35%;
-    top: 30%;
-    border-radius: 3px;
-    border-color: black;
-    border-style: solid;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
+#card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#questionsDiv {
+    padding: 3%;
+    text-align: center;
+}
+
+#highscore {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+
+}
+
+#timer {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
 
 
