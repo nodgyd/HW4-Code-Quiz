@@ -63,6 +63,7 @@ function render(questionsIndex) {
  
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
+        listItem.setAttribute("class", "btn btn-primary list-group-item")
         listItem.textContent = newItem;
         questionsDiv.appendChild(ulCreate);
         ulCreate.appendChild(listItem);
@@ -77,6 +78,7 @@ function compare(event) {
 
         var createDiv = document.createElement("div");
         createDiv.setAttribute("id", "createDiv");
+    
      
         if (element.textContent == questions[questionsIndex].answer) {
             score++;
@@ -129,15 +131,11 @@ function allDone() {
         questionsDiv.appendChild(createP2);
     }
 
-    var createLabel = document.createElement("label");
-    createLabel.setAttribute("id", "createLabel");
-    createLabel.textContent = "Enter your initials: ";
-
-    questionsDiv.appendChild(createLabel);
-
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
+    createInput.setAttribute("id", "exampleInputEmail1")
+    createInput.setAttribute("placeholder", "Enter Initials")
     createInput.textContent = "";
 
     questionsDiv.appendChild(createInput);
@@ -146,6 +144,7 @@ function allDone() {
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
+    createSubmit.setAttribute("class", "btn btn-primary")
     createSubmit.textContent = "Submit";
 
     questionsDiv.appendChild(createSubmit);

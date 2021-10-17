@@ -31,6 +31,10 @@ body {
 
 }
 
+#Submit {
+    margin-top: 10px;
+}
+
 #timer {
     position: absolute;
     top: 10%;
